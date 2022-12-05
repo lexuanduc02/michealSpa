@@ -10,3 +10,15 @@ D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTo
 D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\michealSpa.dll
 D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\michealSpa.xml
 D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\michealSpa.pdb
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\bin\michealSpa.dll.config
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\bin\michealSpa.dll
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\bin\michealSpa.pdb
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\bin\michealSpa.xml
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\obj\Debug\michealSpa.vbproj.AssemblyReference.cache
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\obj\Debug\michealSpa.Resources.resources
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\obj\Debug\michealSpa.vbproj.GenerateResource.cache
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\obj\Debug\michealSpa.vbproj.CoreCompileInputs.cache
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\obj\Debug\michealSpa.vbproj.CopyComplete
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\obj\Debug\michealSpa.dll
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\obj\Debug\michealSpa.xml
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\michealSpa\vietbizTour\vietbizTour\obj\Debug\michealSpa.pdb
