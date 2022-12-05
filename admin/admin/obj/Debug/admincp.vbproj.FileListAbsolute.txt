@@ -1,0 +1,47 @@
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\bin\admincp.dll.config
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\bin\admincp.dll
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\bin\admincp.pdb
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\bin\admincp.xml
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\obj\Debug\admincp.vbprojResolveAssemblyReference.cache
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\obj\Debug\admincp.Resources.resources
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\obj\Debug\admincp.vbproj.GenerateResource.Cache
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\obj\Debug\admincp.dll
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\obj\Debug\admincp.xml
+C:\Users\DATNV\Documents\Visual Studio 2013\Projects\2017\divano.vn\admincp\admincp\obj\Debug\admincp.pdb
+E:\2017\divano.vn\admincp\admincp\bin\admincp.dll.config
+E:\2017\divano.vn\admincp\admincp\bin\admincp.dll
+E:\2017\divano.vn\admincp\admincp\bin\admincp.pdb
+E:\2017\divano.vn\admincp\admincp\bin\admincp.xml
+E:\2017\divano.vn\admincp\admincp\obj\Debug\admincp.Resources.resources
+E:\2017\divano.vn\admincp\admincp\obj\Debug\admincp.vbproj.GenerateResource.Cache
+E:\2017\divano.vn\admincp\admincp\obj\Debug\admincp.dll
+E:\2017\divano.vn\admincp\admincp\obj\Debug\admincp.xml
+E:\2017\divano.vn\admincp\admincp\obj\Debug\admincp.pdb
+E:\2017\noithatvang.net\admincp\admincp\bin\admincp.dll.config
+E:\2017\noithatvang.net\admincp\admincp\bin\admincp.dll
+E:\2017\noithatvang.net\admincp\admincp\bin\admincp.pdb
+E:\2017\noithatvang.net\admincp\admincp\bin\admincp.xml
+E:\2017\noithatvang.net\admincp\admincp\obj\Debug\admincp.Resources.resources
+E:\2017\noithatvang.net\admincp\admincp\obj\Debug\admincp.vbproj.GenerateResource.Cache
+E:\2017\noithatvang.net\admincp\admincp\obj\Debug\admincp.dll
+E:\2017\noithatvang.net\admincp\admincp\obj\Debug\admincp.xml
+E:\2017\noithatvang.net\admincp\admincp\obj\Debug\admincp.pdb
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\bin\admincp.dll.config
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\bin\admincp.dll
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\bin\admincp.pdb
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\bin\admincp.xml
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\obj\Debug\admincp.vbprojResolveAssemblyReference.cache
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\obj\Debug\admincp.Resources.resources
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\obj\Debug\admincp.vbproj.GenerateResource.Cache
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\obj\Debug\admincp.dll
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\obj\Debug\admincp.xml
+C:\Users\DATNV\Desktop\noithatvang\admincp\admincp\obj\Debug\admincp.pdb
+E:\MrDat\luxdeco\admincp\admincp\obj\Debug\admincp.Resources.resources
+E:\MrDat\luxdeco\admincp\admincp\obj\Debug\admincp.vbproj.GenerateResource.Cache
+E:\MrDat\luxdeco\admincp\admincp\bin\admincp.dll.config
+E:\MrDat\luxdeco\admincp\admincp\bin\admincp.dll
+E:\MrDat\luxdeco\admincp\admincp\bin\admincp.pdb
+E:\MrDat\luxdeco\admincp\admincp\bin\admincp.xml
+E:\MrDat\luxdeco\admincp\admincp\obj\Debug\admincp.dll
+E:\MrDat\luxdeco\admincp\admincp\obj\Debug\admincp.xml
+E:\MrDat\luxdeco\admincp\admincp\obj\Debug\admincp.pdb

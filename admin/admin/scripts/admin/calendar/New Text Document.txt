@@ -1,0 +1,7 @@
+﻿      <link rel="stylesheet" type="text/css" href="/js/calendar/24h_v2.css" />
+    <script language="JavaScript" src="/js/calendar/calendar.js" type="text/javascript"></script>  
+ 
+
+                     Chọn ngày <input class="textbox" style="width:100px;" name="txtdate" id="txtdate" onclick="setYears(2011, 2012); showCalender(this, 'txtdate');return false;" readonly="readonly" type="text" />
+                        <asp:ImageButton ID="idate" runat="server" ImageUrl="/images/icon/icon8.jpg" ImageAlign="top" />
+                        <!--#include file="/js/calendar/calendar.html"-->

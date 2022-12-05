@@ -1,0 +1,24 @@
+D:\2020\vietbizTour\vietbizTour\vietbizTour\bin\vietbizTour.dll.config
+D:\2020\vietbizTour\vietbizTour\vietbizTour\bin\vietbizTour.dll
+D:\2020\vietbizTour\vietbizTour\vietbizTour\bin\vietbizTour.pdb
+D:\2020\vietbizTour\vietbizTour\vietbizTour\bin\vietbizTour.xml
+D:\2020\vietbizTour\vietbizTour\vietbizTour\obj\Debug\vietbizTour.Resources.resources
+D:\2020\vietbizTour\vietbizTour\vietbizTour\obj\Debug\vietbizTour.vbproj.GenerateResource.Cache
+D:\2020\vietbizTour\vietbizTour\vietbizTour\obj\Debug\vietbizTour.dll
+D:\2020\vietbizTour\vietbizTour\vietbizTour\obj\Debug\vietbizTour.xml
+D:\2020\vietbizTour\vietbizTour\vietbizTour\obj\Debug\vietbizTour.pdb
+D:\2020\vietbizTour\vietbizTour\vietbizTour\obj\Debug\vietbizTour.vbprojAssemblyReference.cache
+D:\2020\vietbizTour\vietbizTour\vietbizTour\obj\Debug\vietbizTour.vbproj.CoreCompileInputs.cache
+D:\2020\vietbizTour\vietbizTour\vietbizTour\obj\Debug\vietbizTour.vbproj.CopyComplete
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\bin\vietbizTour.dll.config
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\bin\vietbizTour.dll
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\bin\vietbizTour.pdb
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\bin\vietbizTour.xml
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\vietbizTour.vbproj.AssemblyReference.cache
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\vietbizTour.Resources.resources
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\vietbizTour.vbproj.GenerateResource.cache
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\vietbizTour.vbproj.CoreCompileInputs.cache
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\vietbizTour.vbproj.CopyComplete
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\vietbizTour.dll
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\vietbizTour.xml
+D:\OneDrive - lxd02\5. workspace\dotnet\2022\MichealBeauty\vietbizTour\vietbizTour\obj\Debug\vietbizTour.pdb

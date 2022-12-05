@@ -1,0 +1,1042 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43B228C6-2865-43A9-8912-556CA5CA5C7D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>admin</RootNamespace>
+    <AssemblyName>admin</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44352</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>admin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bambu.Portal_2.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Bambu.Portal_2.0.dll</HintPath>
+    </Reference>
+    <Reference Include="CKEditor.NET, Version=3.6.6.2, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CKFinder, Version=2.6.0.2792, Culture=neutral, PublicKeyToken=579e7adc719a1423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CKFinder.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.5.2912.21007, Culture=neutral, PublicKeyToken=4f86767c9b519a06, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\advert.aspx" />
+    <Content Include="admin\advertp.aspx" />
+    <Content Include="admin\advertp1.aspx" />
+    <Content Include="admin\countries.aspx" />
+    <Content Include="admin\districts.aspx" />
+    <Content Include="admin\direction.aspx" />
+    <Content Include="admin\gallery.aspx" />
+    <Content Include="admin\icon\favicon.png" />
+    <Content Include="admin\include\iclFooter.aspx" />
+    <Content Include="admin\include\iclHead.aspx" />
+    <Content Include="admin\include\iclLeft.aspx" />
+    <Content Include="admin\contentp.aspx" />
+    <Content Include="admin\project.aspx" />
+    <Content Include="admin\icon\b_drop.png" />
+    <Content Include="admin\icon\delimg.gif" />
+    <Content Include="admin\icon\icon_delete.gif" />
+    <Content Include="admin\icon\icon_edit.gif" />
+    <Content Include="admin\icon\icon_logout.png" />
+    <Content Include="admin\icon\icon_menu.png" />
+    <Content Include="admin\icon\icon_news.png" />
+    <Content Include="admin\icon\icon_pass.png" />
+    <Content Include="admin\icon\icon_pro.png" />
+    <Content Include="admin\icon\icon_ym.png" />
+    <Content Include="admin\icon\logo.png" />
+    <Content Include="admin\login.aspx" />
+    <Content Include="admin\menu.aspx" />
+    <Content Include="admin\news.aspx" />
+    <Content Include="admin\pass.aspx" />
+    <Content Include="admin\tab.aspx" />
+    <Content Include="admin\typebds.aspx" />
+    <Content Include="admin\typeda.aspx" />
+    <Content Include="admin\typegd.aspx" />
+    <Content Include="admin\user.aspx" />
+    <Content Include="admin\index.aspx" />
+    <Content Include="bin\admin.dll" />
+    <Content Include="bin\admin.xml" />
+    <Content Include="bin\Bambu.Portal_2.0.dll" />
+    <Content Include="bin\Intelligencia.UrlRewriter.dll" />
+    <Content Include="Content\ckeditor\adapters\jquery.js" />
+    <Content Include="Content\ckeditor\build-config.js" />
+    <Content Include="Content\ckeditor\ckeditor.js" />
+    <Content Include="Content\ckeditor\config.js" />
+    <Content Include="Content\ckeditor\contents.css" />
+    <Content Include="Content\ckeditor\lang\en.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\az.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\en-au.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\es-mx.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\oc.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="Content\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Content\ckeditor\plugins\balloonpanel\skins\kama\balloonpanel.css" />
+    <Content Include="Content\ckeditor\plugins\balloonpanel\skins\moono-lisa\balloonpanel.css" />
+    <Content Include="Content\ckeditor\plugins\balloonpanel\skins\moono-lisa\images\close.png" />
+    <Content Include="Content\ckeditor\plugins\balloonpanel\skins\moono-lisa\images\hidpi\close.png" />
+    <Content Include="Content\ckeditor\plugins\balloonpanel\skins\moono\balloonpanel.css" />
+    <Content Include="Content\ckeditor\plugins\balloonpanel\skins\moono\images\close.png" />
+    <Content Include="Content\ckeditor\plugins\balloonpanel\skins\moono\images\hidpi\close.png" />
+    <Content Include="Content\ckeditor\plugins\balloontoolbar\skins\default.css" />
+    <Content Include="Content\ckeditor\plugins\balloontoolbar\skins\kama\balloontoolbar.css" />
+    <Content Include="Content\ckeditor\plugins\balloontoolbar\skins\moono-lisa\balloontoolbar.css" />
+    <Content Include="Content\ckeditor\plugins\balloontoolbar\skins\moono\balloontoolbar.css" />
+    <Content Include="Content\ckeditor\plugins\basewidget\css\style.css" />
+    <Content Include="Content\ckeditor\plugins\btgrid\dialogs\btgrid.js" />
+    <Content Include="Content\ckeditor\plugins\btgrid\LICENSE.txt" />
+    <Content Include="Content\ckeditor\plugins\btgrid\styles\editor.css" />
+    <Content Include="Content\ckeditor\plugins\colordialog\dialogs\colordialog.css" />
+    <Content Include="Content\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Content\ckeditor\plugins\copyformatting\cursors\cursor-disabled.svg" />
+    <Content Include="Content\ckeditor\plugins\copyformatting\cursors\cursor.svg" />
+    <Content Include="Content\ckeditor\plugins\copyformatting\styles\copyformatting.css" />
+    <Content Include="Content\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Content\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Content\ckeditor\plugins\docprops\dialogs\docprops.js" />
+    <Content Include="Content\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Content\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Content\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Content\ckeditor\plugins\icons.png" />
+    <Content Include="Content\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="Content\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Content\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="Content\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Content\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="Content\ckeditor\plugins\layoutmanager\.idea\misc.xml" />
+    <Content Include="Content\ckeditor\plugins\layoutmanager\.idea\modules.xml" />
+    <Content Include="Content\ckeditor\plugins\layoutmanager\.idea\vcs.xml" />
+    <Content Include="Content\ckeditor\plugins\layoutmanager\.idea\workspace.xml" />
+    <Content Include="Content\ckeditor\plugins\layoutmanager\css\bootstrap.css" />
+    <Content Include="Content\ckeditor\plugins\layoutmanager\css\style.css" />
+    <Content Include="Content\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Content\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Content\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="Content\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="Content\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Content\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="Content\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="Content\ckeditor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="Content\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="Content\ckeditor\plugins\oembed\libs\jquery.oembed.min.js" />
+    <Content Include="Content\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Content\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Content\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\angel_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\angry_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\broken_heart.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\confused_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\cry_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\devil_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\embarrassed_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\envelope.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\heart.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\kiss.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\lightbulb.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\omg_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\regular_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\sad_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\shades_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\teeth_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\thumbs_down.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\thumbs_up.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\tongue_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.png" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Content\ckeditor\plugins\smiley\images\wink_smile.png" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\az.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\en-au.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\en-ca.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\es-mx.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\eu.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\oc.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\ro.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Content\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Content\ckeditor\plugins\tableselection\styles\tableselection.css" />
+    <Content Include="Content\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Content\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Content\ckeditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="Content\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Content\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Content\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Content\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Content\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Content\ckeditor\plugins\widget\images\handle.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\dialog.css" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\dialog_ie.css" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\dialog_ie8.css" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\dialog_iequirks.css" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\editor.css" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\editor_gecko.css" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\editor_ie.css" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\editor_ie8.css" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\editor_iequirks.css" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\icons.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\icons_hidpi.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\arrow.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\close.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\hidpi\close.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\hidpi\lock-open.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\hidpi\lock.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\hidpi\refresh.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\lock-open.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\lock.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\refresh.png" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\images\spinner.gif" />
+    <Content Include="Content\ckeditor\styles.js" />
+    <Content Include="Content\ckfinder\config.ascx" />
+    <Content Include="images\brand\noi-that-190_3.jpg" />
+    <Content Include="images\brand\noi-that-fami_2.jpg" />
+    <Content Include="images\brand\noi-that-hoa-phat_1.jpg" />
+    <Content Include="images\brand\noi-that-xuan-hoa_4.jpg" />
+    <Content Include="images\brand\null.gif" />
+    <Content Include="images\collection\6-fail-safe-living-room-plans-7.jpg" />
+    <Content Include="images\collection\6-fail-safe-living-room-plans_7.jpg" />
+    <Content Include="images\collection\behind-the-17-patterns-artwork-collection-9.jpg" />
+    <Content Include="images\collection\behind-the-17-patterns-artwork-collection_9.jpg" />
+    <Content Include="images\collection\interior-design-styles-hollywood-regency-8.jpg" />
+    <Content Include="images\collection\interior-design-styles-hollywood-regency_8.jpg" />
+    <Content Include="images\collection\null.gif" />
+    <Content Include="images\icon\1.gif" />
+    <Content Include="images\icon\bc1.jpg" />
+    <Content Include="images\icon\favicon.png" />
+    <Content Include="images\icon\logo.png" />
+    <Content Include="images\icon\zoo.png" />
+    <Content Include="images\image\home\gioi-thieu.jpg" />
+    <Content Include="images\image\home\star.jpg" />
+    <Content Include="images\image\home\tick.jpg" />
+    <Content Include="images\image\news\tvmg\img_n1.jpg" />
+    <Content Include="images\image\news\tvmg\img_n2.jpg" />
+    <Content Include="images\image\news\tvmg\img_n3.jpg" />
+    <Content Include="images\image\news\tvmg\img_n4.jpg" />
+    <Content Include="images\image\upload\ghe-van-phong.jpg" />
+    <Content Include="images\image\upload\ic_f1.png" />
+    <Content Include="images\image\upload\ic_f2.png" />
+    <Content Include="images\image\upload\ic_f3.png" />
+    <Content Include="images\mangxahoi\1.gif" />
+    <Content Include="images\mangxahoi\10.gif" />
+    <Content Include="images\mangxahoi\2.gif" />
+    <Content Include="images\mangxahoi\3.gif" />
+    <Content Include="images\mangxahoi\4.gif" />
+    <Content Include="images\mangxahoi\9.gif" />
+    <Content Include="images\mangxahoi\null.gif" />
+    <Content Include="images\media\1.jpg" />
+    <Content Include="images\media\122.jpg" />
+    <Content Include="images\media\123.jpg" />
+    <Content Include="images\media\124.jpg" />
+    <Content Include="images\media\125.jpg" />
+    <Content Include="images\media\126.jpg" />
+    <Content Include="images\media\127.jpg" />
+    <Content Include="images\media\128.jpg" />
+    <Content Include="images\media\129.jpg" />
+    <Content Include="images\media\2.jpg" />
+    <Content Include="images\media\3.jpg" />
+    <Content Include="images\media\4.jpg" />
+    <Content Include="images\media\5.gif" />
+    <Content Include="images\media\6.jpg" />
+    <Content Include="images\media\null.gif" />
+    <Content Include="images\menu\accessories_562_3.jpg" />
+    <Content Include="images\menu\apartment-interior-design_535_3.jpg" />
+    <Content Include="images\menu\art--frames_666.gif" />
+    <Content Include="images\menu\art--frames_666_3.jpg" />
+    <Content Include="images\menu\ban-lam-viec.gif" />
+    <Content Include="images\menu\ban-lam-viec_486_3.jpg" />
+    <Content Include="images\menu\ban-sofa.gif" />
+    <Content Include="images\menu\ban-sofa_495_3.jpg" />
+    <Content Include="images\menu\bao-gia-cua-nhua-loi-thep_657_3.jpg" />
+    <Content Include="images\menu\bao-gia-kinh-cuong-luc_655_3.jpg" />
+    <Content Include="images\menu\bao-gia-san-go-cong-nghiep_658_3.jpg" />
+    <Content Include="images\menu\bao-gia-thi-cong-thach-cao_656_3.jpg" />
+    <Content Include="images\menu\bao-gia-thiet-ke-noi-that_659_3.jpg" />
+    <Content Include="images\menu\bao-gia-vach-cua-nhom-kinh_660_3.jpg" />
+    <Content Include="images\menu\bathroom-decor_669.gif" />
+    <Content Include="images\menu\bathroom-decor_669_3.jpg" />
+    <Content Include="images\menu\bedding_668.gif" />
+    <Content Include="images\menu\bedding_668_3.jpg" />
+    <Content Include="images\menu\biet-thu_564_3.jpg" />
+    <Content Include="images\menu\boc-lai-dem-sofa_542_3.jpg" />
+    <Content Include="images\menu\cai-tao-sua-chua_578_3.jpg" />
+    <Content Include="images\menu\cai-tao-sua-chua_578_3.png" />
+    <Content Include="images\menu\catalogue_572_3.jpg" />
+    <Content Include="images\menu\chung-cu_544_3.jpg" />
+    <Content Include="images\menu\cong-ty-co-phan-noi-that-vang_3.jpg" />
+    <Content Include="images\menu\cushions--throws_667.gif" />
+    <Content Include="images\menu\cushions--throws_667_3.jpg" />
+    <Content Include="images\menu\den-chieu-sang_595.png" />
+    <Content Include="images\menu\do-noi-that_546_3.jpg" />
+    <Content Include="images\menu\ghe-van-phong.gif" />
+    <Content Include="images\menu\ghe-van-phong_485_3.jpg" />
+    <Content Include="images\menu\home-accents_665.gif" />
+    <Content Include="images\menu\home-accents_665_3.jpg" />
+    <Content Include="images\menu\ke-tivi_582_3.jpg" />
+    <Content Include="images\menu\kinh-nghiem-hay_3.jpg" />
+    <Content Include="images\menu\mau-mau-vat-lieu_570_3.jpg" />
+    <Content Include="images\menu\mo-ket-sat_541_3.jpg" />
+    <Content Include="images\menu\ngoai-that_452.gif" />
+    <Content Include="images\menu\noi-that-phong-khach_447_3.jpg" />
+    <Content Include="images\menu\noi-that-phong-tam_450_3.jpg" />
+    <Content Include="images\menu\noi-that-tre-em_594.png" />
+    <Content Include="images\menu\noi-that-van-phong_451_3.jpg" />
+    <Content Include="images\menu\null.gif" />
+    <Content Include="images\menu\phong-an-bep_448_3.jpg" />
+    <Content Include="images\menu\phong-an_448.gif" />
+    <Content Include="images\menu\phong-bep_543_3.jpg" />
+    <Content Include="images\menu\phong-khach-chung-cu-hien-dai_520_3.jpg" />
+    <Content Include="images\menu\phong-khach_447.gif" />
+    <Content Include="images\menu\phong-khach_447_3.jpg" />
+    <Content Include="images\menu\phong-lam-viec_451_3.jpg" />
+    <Content Include="images\menu\phong-ngu_449.gif" />
+    <Content Include="images\menu\phong-ngu_449_3.jpg" />
+    <Content Include="images\menu\phong-tam_450.gif" />
+    <Content Include="images\menu\phong-tam_450_3.jpg" />
+    <Content Include="images\menu\phong-tho_585.png" />
+    <Content Include="images\menu\phong-tho_585_3.jpg" />
+    <Content Include="images\menu\sofa-cao-cap_496_3.jpg" />
+    <Content Include="images\menu\sofa-da.gif" />
+    <Content Include="images\menu\sofa-da_487_3.jpg" />
+    <Content Include="images\menu\sofa-don.gif" />
+    <Content Include="images\menu\sofa-don_490_3.jpg" />
+    <Content Include="images\menu\sofa-gia-re.gif" />
+    <Content Include="images\menu\sofa-gia-re_494_3.jpg" />
+    <Content Include="images\menu\sofa-giuong.gif" />
+    <Content Include="images\menu\sofa-giuong_492_3.jpg" />
+    <Content Include="images\menu\sofa-goc.gif" />
+    <Content Include="images\menu\sofa-goc_489_3.jpg" />
+    <Content Include="images\menu\sofa-nhap-khau.gif" />
+    <Content Include="images\menu\sofa-nhap-khau_493_3.jpg" />
+    <Content Include="images\menu\sofa-ni.gif" />
+    <Content Include="images\menu\sofa-ni_488_3.jpg" />
+    <Content Include="images\menu\sofa-phong-khach_580_3.jpg" />
+    <Content Include="images\menu\sofa-vang.gif" />
+    <Content Include="images\menu\sofa-vang_491_3.jpg" />
+    <Content Include="images\menu\thi-cong-dieu-hoa_579_3.jpg" />
+    <Content Include="images\menu\thi-cong-do-go_576_3.jpg" />
+    <Content Include="images\menu\thiet-ke-biet-thu_536_3.jpg" />
+    <Content Include="images\menu\thiet-ke-chung-cu_535_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-biet-thu_536_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-chung-cu_535_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-hoi-truong_552_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-khach-san_538_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-nha-hang_550_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-nha-pho_537_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-nha-pho_538_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-showroom_539_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-span_540_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-truong-hoc_553_3.jpg" />
+    <Content Include="images\menu\thiet-ke-noi-that-van-phong_551_3.jpg" />
+    <Content Include="images\menu\trang-tri-noi-that_577_3.jpg" />
+    <Content Include="images\menu\trang-tri-noi-that_616.png" />
+    <Content Include="images\menu\tu-van-mua-ban-ghe-an_581_3.jpg" />
+    <Content Include="images\menu\tu-van-mua-ban_483_3.jpg" />
+    <Content Include="images\menu\tu-van-mua-den_484_3.jpg" />
+    <Content Include="images\menu\tu-van-mua-ghe-don_480_3.jpg" />
+    <Content Include="images\menu\tu-van-mua-giuong_482_3.jpg" />
+    <Content Include="images\menu\tu-van-mua-tu_481_3.jpg" />
+    <Content Include="images\menu\van-phong_451.gif" />
+    <Content Include="images\menu\vat-lieu-noi-that_571_3.jpg" />
+    <Content Include="images\menu\xu-huong-san-pham-hien-nay_520_3.PNG" />
+    <Content Include="images\menu\xu-huong-san-pham-hien-nay_521_3.jpg" />
+    <Content Include="images\menu\xu-huong-san-pham-hien-nay_522_3.jpg" />
+    <Content Include="images\menu\xu-huong-san-pham-hien-nay_523_3.jpg" />
+    <Content Include="images\menu\xu-huong-san-pham-hien-nay_524_3.jpg" />
+    <Content Include="images\menu\xu-huong-san-pham-hien-nay_525_3.jpg" />
+    <Content Include="images\menu\xu-huong-san-pham-hien-nay_526_3.jpg" />
+    <Content Include="images\menu\xu-huong-san-pham-hien-nay_527_3.jpg" />
+    <Content Include="images\news\bao-cao-tinh-hinh-thi-truong-bat-dong-san-viet-nam-nam-2013-phan-1-1.jpg" />
+    <Content Include="images\news\bao-cao-tinh-hinh-thi-truong-bat-dong-san-viet-nam-nam-2013-phan-1_1.jpg" />
+    <Content Include="images\news\bao-cao-tinh-hinh-thi-truong-bat-dong-san-viet-nam-nam-2013-phan-2-2.jpg" />
+    <Content Include="images\news\bao-cao-tinh-hinh-thi-truong-bat-dong-san-viet-nam-nam-2013-phan-2_2.jpg" />
+    <Content Include="images\news\bao-cao-tinh-hinh-thi-truong-bat-dong-san-viet-nam-nam-2013-phan-3-3.jpg" />
+    <Content Include="images\news\bao-cao-tinh-hinh-thi-truong-bat-dong-san-viet-nam-nam-2013-phan-3_3.jpg" />
+    <Content Include="images\news\khu-sinh-do-thi-sinh-thai-phuc-hop-saigon-riverside-quan-thu-duc-4.jpg" />
+    <Content Include="images\news\khu-sinh-do-thi-sinh-thai-phuc-hop-saigon-riverside-quan-thu-duc_4.jpg" />
+    <Content Include="images\news\kingdom-101-duoc-khach-hang-chu-y-vi-dau-6.jpg" />
+    <Content Include="images\news\kingdom-101-duoc-khach-hang-chu-y-vi-dau_6.jpg" />
+    <Content Include="images\news\null.gif" />
+    <Content Include="images\news\tiem-nang-dau-tu-du-an-can-ho-palm-garden-quan-2-5.jpg" />
+    <Content Include="images\news\tiem-nang-dau-tu-du-an-can-ho-palm-garden-quan-2_5.jpg" />
+    <Content Include="images\project\5-ly-do-ban-nen-chon-mua-lancaster-legacy---lancaster-lux-quan-1-j1212.jpg" />
+    <Content Include="images\project\5-ly-do-ban-nen-chon-mua-lancaster-legacy---lancaster-lux-quan-1_j1212.jpg" />
+    <Content Include="images\project\biet-thu-cho-thue-nguyen-du-park-villas---co-dien-va-hien-dai-j1059.jpg" />
+    <Content Include="images\project\biet-thu-cho-thue-nguyen-du-park-villas---co-dien-va-hien-dai_j1059.jpg" />
+    <Content Include="images\project\biet-thu-the-venica-khang-dien---noi-ton-vinh-dang-cap-thuong-luu-j1202.jpg" />
+    <Content Include="images\project\biet-thu-the-venica-khang-dien---noi-ton-vinh-dang-cap-thuong-luu_j1202.jpg" />
+    <Content Include="images\project\biet-thu-victoria-vinhomes-golden-river-bason-du-an-nam-tren-manh-dat-vang-j1217.jpg" />
+    <Content Include="images\project\biet-thu-victoria-vinhomes-golden-river-bason-du-an-nam-tren-manh-dat-vang_j1217.jpg" />
+    <Content Include="images\project\biet-thu-victoria-vinhomes-golden-river-bason-j8.jpg" />
+    <Content Include="images\project\biet-thu-victoria-vinhomes-golden-river-bason_j8.jpg" />
+    <Content Include="images\project\biet-thu-vinhomes-la-seine-khu-do-thi-thanh-pho-xanh-j1200.jpg" />
+    <Content Include="images\project\biet-thu-vinhomes-la-seine-khu-do-thi-thanh-pho-xanh_j1200.jpg" />
+    <Content Include="images\project\can-ho-lancaster-legacy-quan-1-dong-can-ho-luxury-dang-cap-hang-sang-j1210.jpg" />
+    <Content Include="images\project\can-ho-lancaster-legacy-quan-1-dong-can-ho-luxury-dang-cap-hang-sang_j1210.jpg" />
+    <Content Include="images\project\can-ho-masteri-m-one-go-vap-j2.jpg" />
+    <Content Include="images\project\can-ho-masteri-m-one-go-vap_j2.jpg" />
+    <Content Include="images\project\can-ho-serenity-sky-villas-sonkimland-mot-san-pham-sieu-cao-cap-j1225.jpg" />
+    <Content Include="images\project\can-ho-serenity-sky-villas-sonkimland-mot-san-pham-sieu-cao-cap_j1225.jpg" />
+    <Content Include="images\project\can-ho-van-phong-cho-thue-dang-cap-sang-trong-indochina-park-tower-j1021.jpg" />
+    <Content Include="images\project\can-ho-van-phong-cho-thue-dang-cap-sang-trong-indochina-park-tower_j1021.jpg" />
+    <Content Include="images\project\cao-oc-can-ho-van-phong-cho-thue-the-nexus---vien-kim-cuong-cua-thanh-pho-j1077.jpg" />
+    <Content Include="images\project\cao-oc-can-ho-van-phong-cho-thue-the-nexus---vien-kim-cuong-cua-thanh-pho_j1077.jpg" />
+    <Content Include="images\project\chon-an-sinh-hoan-hao---biet-thu-sala-saroma-villa-j1199.jpg" />
+    <Content Include="images\project\chon-an-sinh-hoan-hao---biet-thu-sala-saroma-villa_j1199.jpg" />
+    <Content Include="images\project\dich-vu-cho-thue-can-ho-van-phong-quan-3-j1382.jpg" />
+    <Content Include="images\project\dich-vu-cho-thue-can-ho-van-phong-quan-3_j1382.jpg" />
+    <Content Include="images\project\dich-vu-cho-thue-can-ho-van-phong-quan-4-j1383.jpg" />
+    <Content Include="images\project\dich-vu-cho-thue-can-ho-van-phong-quan-4_j1383.jpg" />
+    <Content Include="images\project\dich-vu-cho-thue-can-ho-van-phong-quan-5-j1384.jpg" />
+    <Content Include="images\project\dich-vu-cho-thue-can-ho-van-phong-quan-5_j1384.jpg" />
+    <Content Include="images\project\du-an-can-ho-dich-vu-terra-royal-quan-3-can-ho-dich-vu-5-sao-j1226.jpg" />
+    <Content Include="images\project\du-an-can-ho-dich-vu-terra-royal-quan-3-can-ho-dich-vu-5-sao_j1226.jpg" />
+    <Content Include="images\project\du-an-palm-city-keppel-land-quan-2-j7.jpg" />
+    <Content Include="images\project\du-an-palm-city-keppel-land-quan-2_j7.jpg" />
+    <Content Include="images\project\du-an-phong-phu-4-binh-chanh-j4.jpg" />
+    <Content Include="images\project\du-an-phong-phu-4-binh-chanh_j4.jpg" />
+    <Content Include="images\project\hausneo-quan-9-j7.jpg" />
+    <Content Include="images\project\hausneo-quan-9_j7.jpg" />
+    <Content Include="images\project\khu-do-thi-lakeview-city-novaland-khu-do-thi-dang-song-nhat-quan-2-j1201.jpg" />
+    <Content Include="images\project\khu-do-thi-lakeview-city-novaland-khu-do-thi-dang-song-nhat-quan-2_j1201.jpg" />
+    <Content Include="images\project\lager_1.jpg" />
+    <Content Include="images\project\lager_10 %281%29.jpg" />
+    <Content Include="images\project\lager_10.jpg" />
+    <Content Include="images\project\lager_11.jpg" />
+    <Content Include="images\project\lager_12.jpg" />
+    <Content Include="images\project\lager_13.jpg" />
+    <Content Include="images\project\lager_15.jpg" />
+    <Content Include="images\project\lager_16.jpg" />
+    <Content Include="images\project\lager_17.jpg" />
+    <Content Include="images\project\lager_18.jpg" />
+    <Content Include="images\project\lager_19.jpg" />
+    <Content Include="images\project\lager_2.jpg" />
+    <Content Include="images\project\lager_20.jpg" />
+    <Content Include="images\project\lager_21.jpg" />
+    <Content Include="images\project\lager_22.jpg" />
+    <Content Include="images\project\lager_23.jpg" />
+    <Content Include="images\project\lager_24.jpg" />
+    <Content Include="images\project\lager_25.jpg" />
+    <Content Include="images\project\lager_26.jpg" />
+    <Content Include="images\project\lager_27.jpg" />
+    <Content Include="images\project\lager_28.jpg" />
+    <Content Include="images\project\lager_29.jpg" />
+    <Content Include="images\project\lager_3.jpg" />
+    <Content Include="images\project\lager_30.jpg" />
+    <Content Include="images\project\lager_31.jpg" />
+    <Content Include="images\project\lager_32.jpg" />
+    <Content Include="images\project\lager_33.jpg" />
+    <Content Include="images\project\lager_34.jpg" />
+    <Content Include="images\project\lager_35.jpg" />
+    <Content Include="images\project\lager_8.jpg" />
+    <Content Include="images\project\lager_9.jpg" />
+    <Content Include="images\project\landmark-81-tang-dinh-cao-viet-nam-sanh-tam-the-gioi-j11.jpg" />
+    <Content Include="images\project\landmark-81-tang-dinh-cao-viet-nam-sanh-tam-the-gioi_j11.jpg" />
+    <Content Include="images\project\nha-pho-biet-thu-cao-cap-park-riverside-mat-tien-song-dong-nai-j1236.jpg" />
+    <Content Include="images\project\nha-pho-biet-thu-cao-cap-park-riverside-mat-tien-song-dong-nai_j1236.jpg" />
+    <Content Include="images\project\nha-pho-biet-thu-khang-dien-binh-chanh-dang-cap-nhat-khu-nam-j1238.jpg" />
+    <Content Include="images\project\nha-pho-biet-thu-khang-dien-binh-chanh-dang-cap-nhat-khu-nam_j1238.jpg" />
+    <Content Include="images\project\nhung-ly-do-nen-mua-can-ho-flora-fuji-quan-9-j1193.jpg" />
+    <Content Include="images\project\nhung-ly-do-nen-mua-can-ho-flora-fuji-quan-9_j1193.jpg" />
+    <Content Include="images\project\rosita-garden-j3.jpg" />
+    <Content Include="images\project\rosita-garden_j3.jpg" />
+    <Content Include="images\project\simcity-j5.jpg" />
+    <Content Include="images\project\simcity_j5.jpg" />
+    <Content Include="images\project\small_1.jpg" />
+    <Content Include="images\project\small_10.jpg" />
+    <Content Include="images\project\small_11.jpg" />
+    <Content Include="images\project\small_12.jpg" />
+    <Content Include="images\project\small_13.jpg" />
+    <Content Include="images\project\small_14.jpg" />
+    <Content Include="images\project\small_2.jpg" />
+    <Content Include="images\project\small_3.jpg" />
+    <Content Include="images\project\small_33.jpg" />
+    <Content Include="images\project\small_34.jpg" />
+    <Content Include="images\project\small_35.jpg" />
+    <Content Include="images\project\small_8.jpg" />
+    <Content Include="images\project\small_9.jpg" />
+    <Content Include="images\project\su-dang-cap-cua-biet-thu-evergreen-quan-7-j1192.jpg" />
+    <Content Include="images\project\su-dang-cap-cua-biet-thu-evergreen-quan-7_j1192.jpg" />
+    <Content Include="images\project\thap-muoi-merita-khang-dien-j6.jpg" />
+    <Content Include="images\project\thap-muoi-merita-khang-dien_j6.jpg" />
+    <Content Include="images\project\toa-nha-an-phu---van-phong-cho-thue-quan-3-thich-hop-voi-moi-cong-ty-toa-nha-an-phu-j1376.jpg" />
+    <Content Include="images\project\toa-nha-an-phu---van-phong-cho-thue-quan-3-thich-hop-voi-moi-cong-ty-toa-nha-an-phu_j1376.jpg" />
+    <Content Include="images\project\vinhomes-central-park-tan-cang-j10.jpg" />
+    <Content Include="images\project\vinhomes-central-park-tan-cang_j10.jpg" />
+    <Content Include="images\project\vinhomes-golden-river-ba-son-chinh-thuc-mo-ban-j9.jpg" />
+    <Content Include="images\project\vinhomes-golden-river-ba-son-chinh-thuc-mo-ban_j9.jpg" />
+    <Content Include="images\pro\dom-edizioni-dada-armchair-95.jpg" />
+    <Content Include="images\pro\dom-edizioni-dada-armchair_95.jpg" />
+    <Content Include="images\pro\dom-edizioni-harris-sofa-93.jpg" />
+    <Content Include="images\pro\dom-edizioni-harris-sofa_93.jpg" />
+    <Content Include="images\pro\ikandi-melton-sofa-88.jpg" />
+    <Content Include="images\pro\ikandi-melton-sofa_88.jpg" />
+    <Content Include="images\pro\lager_100.jpg" />
+    <Content Include="images\pro\lager_101.jpg" />
+    <Content Include="images\pro\lager_121.jpg" />
+    <Content Include="images\pro\lager_76.jpg" />
+    <Content Include="images\pro\lager_77.jpg" />
+    <Content Include="images\pro\lager_78.jpg" />
+    <Content Include="images\pro\lager_79.jpg" />
+    <Content Include="images\pro\lager_80.jpg" />
+    <Content Include="images\pro\lager_81.jpg" />
+    <Content Include="images\pro\lager_82.jpg" />
+    <Content Include="images\pro\lager_83.jpg" />
+    <Content Include="images\pro\lager_84.jpg" />
+    <Content Include="images\pro\lager_85.jpg" />
+    <Content Include="images\pro\lager_86.jpg" />
+    <Content Include="images\pro\lager_87.jpg" />
+    <Content Include="images\pro\lager_88.jpg" />
+    <Content Include="images\pro\lager_89.jpg" />
+    <Content Include="images\pro\lager_90.jpg" />
+    <Content Include="images\pro\lager_91.jpg" />
+    <Content Include="images\pro\lager_92.jpg" />
+    <Content Include="images\pro\lager_93.jpg" />
+    <Content Include="images\pro\lager_94.jpg" />
+    <Content Include="images\pro\lager_95.jpg" />
+    <Content Include="images\pro\lager_96.jpg" />
+    <Content Include="images\pro\lager_97.jpg" />
+    <Content Include="images\pro\lager_98.jpg" />
+    <Content Include="images\pro\lager_99.jpg" />
+    <Content Include="images\pro\louise-bradley-swivel-tub-chair-94.jpg" />
+    <Content Include="images\pro\louise-bradley-swivel-tub-chair_94.jpg" />
+    <Content Include="images\pro\ntv-aylott-sofa-91.jpg" />
+    <Content Include="images\pro\ntv-aylott-sofa_91.jpg" />
+    <Content Include="images\pro\ntv-howard-sofa-92.jpg" />
+    <Content Include="images\pro\ntv-howard-sofa_92.jpg" />
+    <Content Include="images\pro\ntv-plaza-sofa-89.jpg" />
+    <Content Include="images\pro\ntv-plaza-sofa_89.jpg" />
+    <Content Include="images\pro\ntv-suzanna-sofa-90.jpg" />
+    <Content Include="images\pro\ntv-suzanna-sofa_90.jpg" />
+    <Content Include="images\pro\selva-st-germain-chair-96.jpg" />
+    <Content Include="images\pro\selva-st-germain-chair_96.jpg" />
+    <Content Include="images\pro\small_100.jpg" />
+    <Content Include="images\pro\small_101.jpg" />
+    <Content Include="images\pro\small_121.jpg" />
+    <Content Include="images\pro\small_76.jpg" />
+    <Content Include="images\pro\small_77.jpg" />
+    <Content Include="images\pro\small_78.jpg" />
+    <Content Include="images\pro\small_79.jpg" />
+    <Content Include="images\pro\small_80.jpg" />
+    <Content Include="images\pro\small_81.jpg" />
+    <Content Include="images\pro\small_82.jpg" />
+    <Content Include="images\pro\small_83.jpg" />
+    <Content Include="images\pro\small_84.jpg" />
+    <Content Include="images\pro\small_85.jpg" />
+    <Content Include="images\pro\small_86.jpg" />
+    <Content Include="images\pro\small_87.jpg" />
+    <Content Include="images\pro\small_88.jpg" />
+    <Content Include="images\pro\small_89.jpg" />
+    <Content Include="images\pro\small_90.jpg" />
+    <Content Include="images\pro\small_91.jpg" />
+    <Content Include="images\pro\small_92.jpg" />
+    <Content Include="images\pro\small_93.jpg" />
+    <Content Include="images\pro\small_94.jpg" />
+    <Content Include="images\pro\small_95.jpg" />
+    <Content Include="images\pro\small_96.jpg" />
+    <Content Include="images\pro\small_97.jpg" />
+    <Content Include="images\pro\small_98.jpg" />
+    <Content Include="images\pro\small_99.jpg" />
+    <Content Include="images\pro\sofalove-seat-112.jpg" />
+    <Content Include="images\pro\sofalove-seat_112.jpg" />
+    <Content Include="images\video\null.gif" />
+    <Content Include="images\yahoo\null.gif" />
+    <Content Include="images\ykien\ong-mac-anh-khoa-j3.jpg" />
+    <Content Include="images\ykien\ong-mac-anh-khoa-j4.jpg" />
+    <Content Include="images\ykien\ong-mac-anh-khoa-j5.jpg" />
+    <Content Include="images\ykien\ong-mac-anh-khoa_j3.jpg" />
+    <Content Include="images\ykien\ong-mac-anh-khoa_j4.jpg" />
+    <Content Include="images\ykien\ong-mac-anh-khoa_j5.jpg" />
+    <Content Include="images\_thumbs\Images\home\gioi-thieu.jpg" />
+    <Content Include="images\_thumbs\Images\home\star.jpg" />
+    <Content Include="images\_thumbs\Images\home\tick.jpg" />
+    <Content Include="images\_thumbs\Images\upload\ghe-van-phong.jpg" />
+    <Content Include="images\_thumbs\Images\upload\ic_f1.png" />
+    <Content Include="images\_thumbs\Images\upload\ic_f2.png" />
+    <Content Include="images\_thumbs\Images\upload\ic_f3.png" />
+    <Content Include="scripts\admin\inbox.js" />
+    <Content Include="scripts\admin\jquery-1.9.1.min.js" />
+    <Content Include="scripts\admin\mBanner.js" />
+    <Content Include="scripts\admin\popup.js" />
+    <Content Include="scripts\admin\TransparentPng.js" />
+    <Content Include="scripts\fancybox\jquery.fancybox.css" />
+    <Content Include="scripts\fancybox\jquery.fancybox.js" />
+    <Content Include="styles\admin.css" />
+    <Content Include="styles\bootstrap.min.css" />
+    <Content Include="styles\login.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="admin\website.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\advert.aspx.designer.vb">
+      <DependentUpon>advert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\advert.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>advert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\advertp.aspx.designer.vb">
+      <DependentUpon>advertp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\advertp.aspx.vb">
+      <DependentUpon>advertp.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\advertp1.aspx.designer.vb">
+      <DependentUpon>advertp1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\advertp1.aspx.vb">
+      <DependentUpon>advertp1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\countries.aspx.designer.vb">
+      <DependentUpon>countries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\countries.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>countries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\districts.aspx.designer.vb">
+      <DependentUpon>districts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\districts.aspx.vb">
+      <DependentUpon>districts.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\direction.aspx.designer.vb">
+      <DependentUpon>direction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\direction.aspx.vb">
+      <DependentUpon>direction.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\gallery.aspx.designer.vb">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\gallery.aspx.vb">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\include\iclFooter.aspx.designer.vb">
+      <DependentUpon>iclFooter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\include\iclFooter.aspx.vb">
+      <DependentUpon>iclFooter.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\include\iclHead.aspx.designer.vb">
+      <DependentUpon>iclHead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\include\iclHead.aspx.vb">
+      <DependentUpon>iclHead.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\include\iclLeft.aspx.designer.vb">
+      <DependentUpon>iclLeft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\include\iclLeft.aspx.vb">
+      <DependentUpon>iclLeft.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\contentp.aspx.designer.vb">
+      <DependentUpon>contentp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\contentp.aspx.vb">
+      <DependentUpon>contentp.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\project.aspx.designer.vb">
+      <DependentUpon>project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\project.aspx.vb">
+      <DependentUpon>project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\menu.aspx.designer.vb">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\menu.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\news.aspx.designer.vb">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\news.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\index.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\pass.aspx.designer.vb">
+      <DependentUpon>pass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\pass.aspx.vb">
+      <DependentUpon>pass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\services\resetSession.ashx.vb">
+      <DependentUpon>resetSession.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\tab.aspx.designer.vb">
+      <DependentUpon>tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\tab.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\typebds.aspx.designer.vb">
+      <DependentUpon>typebds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\typebds.aspx.vb">
+      <DependentUpon>typebds.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\typeda.aspx.designer.vb">
+      <DependentUpon>typeda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\typeda.aspx.vb">
+      <DependentUpon>typeda.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\typegd.aspx.designer.vb">
+      <DependentUpon>typegd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\typegd.aspx.vb">
+      <DependentUpon>typegd.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin\user.aspx.designer.vb">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\user.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="admin\website.aspx.designer.vb">
+      <DependentUpon>website.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\website.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>website.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\admin.dll.config" />
+    <Content Include="admin\services\resetSession.ashx" />
+    <Content Include="Content\ckeditor\CHANGES.md" />
+    <Content Include="Content\ckeditor\LICENSE.md" />
+    <Content Include="Content\ckeditor\plugins\basewidget\README.md" />
+    <Content Include="Content\ckeditor\plugins\btgrid\.gitignore" />
+    <Content Include="Content\ckeditor\plugins\btgrid\bower.json" />
+    <Content Include="Content\ckeditor\plugins\btgrid\README.md" />
+    <Content Include="Content\ckeditor\plugins\layoutmanager\.idea\ckeditor-layoutmanager.iml" />
+    <Content Include="Content\ckeditor\plugins\layoutmanager\README.md" />
+    <Content Include="Content\ckeditor\plugins\oembed\LICENSE.md" />
+    <Content Include="Content\ckeditor\plugins\oembed\README.md" />
+    <Content Include="Content\ckeditor\README.md" />
+    <Content Include="Content\ckeditor\skins\moono-lisa\readme.md" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\contentp\" />
+    <Folder Include="images\gallery\" />
+    <Folder Include="images\media\duan\" />
+    <Folder Include="images\service\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2250</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44352/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

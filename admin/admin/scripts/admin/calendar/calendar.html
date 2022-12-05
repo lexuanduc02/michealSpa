@@ -1,0 +1,79 @@
+﻿<table id="calenderTable">
+    <tbody id="calenderTableHead">
+        <tr>
+            <td colspan="4" align="left"><select onchange="showCalenderBody(createCalender(document.getElementById('selectYear').value, this.selectedIndex, false));" id="selectMonth">
+                <option selected="selected" value="0">
+                    Tháng 1
+                </option>
+
+                <option value="1">
+                    Tháng 2
+                </option>
+
+                <option value="2">
+                    Tháng 3
+                </option>
+
+                <option value="3">
+                    Tháng 4
+                </option>
+
+                <option value="4">
+                    Tháng 5
+                </option>
+
+                <option value="5">
+                    Tháng 6
+                </option>
+
+                <option value="6">
+                    Tháng 7
+                </option>
+
+                <option value="7">
+                    Tháng 8
+                </option>
+
+                <option value="8">
+                    Tháng 9
+                </option>
+
+                <option value="9">
+                    Tháng 10
+                </option>
+
+                <option value="10">
+                    Tháng 11
+                </option>
+
+                <option value="11">
+                    Tháng 12
+                </option>
+            </select></td>
+
+            <td colspan="2" align="center"><select onchange="showCalenderBody(createCalender(this.value, document.getElementById('selectMonth').selectedIndex, false));" id="selectYear"><option selected="selected" value="">&nbsp;</option></select></td>
+
+            <td align="right"><a href="#" onclick="closeCalender();return false;" title="Đóng">X</a></td>
+        </tr>
+    </tbody>
+
+    <tbody id="calenderTableDays">
+        <tr style=" height:20px; line-height:20px;">
+            <td>CN</td>
+
+            <td>T2</td>
+
+            <td>T3</td>
+
+            <td>T4</td>
+
+            <td>T5</td>
+
+            <td>T6</td>
+
+            <td>T7</td>
+        </tr>
+    </tbody>
+
+    <tbody id="calender"><tr><td></td></tr></tbody>
+</table>
